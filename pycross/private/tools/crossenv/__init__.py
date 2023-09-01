@@ -293,7 +293,7 @@ def build_env(
     )
 
     # Symlink alternate names to our wrapper
-    for link_name in ("python", "python3"):
+    for link_name in ("python", "python3.9"):
         link = bin_path / link_name
         if not link.exists():
             link.symlink_to(exe)

@@ -51,7 +51,7 @@ def main(args: Any) -> None:
             "scripts": str(dest_dir / "bin"),
             "data": str(dest_dir / "data"),
         },
-        interpreter="/usr/bin/env python3",  # Generic; it's not feasible to run these scripts directly.
+        interpreter="/usr/bin/env python3.9",  # Generic; it's not feasible to run these scripts directly.
         script_kind="posix",
         bytecode_optimization_levels=[0, 1],
     )
